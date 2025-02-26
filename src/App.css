@@ -1,31 +1,366 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+
+.cart{
+margin: 40px 10px;
+  height: 250px;
+  border: 9px solid #ffd700;
+  position: relative;
+  border-radius: 30px;
+}
+
+.cart ul{
+  margin: 0;
+  padding:0;
+}
+
+
+.cart li{
+  list-style-type: none
+  }
+
+.totalbox{
+  position:absolute;
+  top: 180px;
+  left: 0;
+  height: 60px;
+  display:flex;
+  justify-content: space-around;
+ align-items: center;
+  border-top: 2px solid #ffd700;
+  width: 100%;
+ padding: 16px 0;
+ 
+}
+
+
+
+.otherinfo{
+  margin: 30px 0;
+}
+
+.payment{
+  margin-top: 20px;
+  cursor:pointer;
+}
+
+.payment button{
+  display:inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid pink;
+  border-radius: 20px;
+ 
+}
+
+
+
+.buttonlist{
+margin-top: 40px;
+}
+
+.buttonlist ul{
+ margin:0;
+ padding:0;
+   list-style-type: none;
+    
+}
+
+.buttonlist li{
+  margin: 30px 0; 
+  font: 14px georgia;
+  text-transform: capitalize;
+  display:flex;
+  justify-content: space-around;
+}
+
+.buttonlist button{
+  cursor:pointer;
+  border: 1px solid #ffd700;
+  padding: 6px 9px;
+  border-radius: 5px;
+}
+.buttonlist span{
+  display:inline-block;
+  width: 30%;
+}
+
+.checkout{
+  padding: 8px 12px;
+  background-color:#000;
+  color:#fff;
+  border-radius: 10px;
+  cursor:pointer;
+border:none;
+outline:none;
+}
+
+.checkoutpage{
+margin: 40px 10px;
+ border: 9px solid #ffd700;
+ border-radius: 20px;
+
+}
+.checkoutpage span{
+  display:inline-block;
+  width: 30%;
+}
+
+
+
+.checkoutpage button, .checkoutpage span, .checkoutpage input{
+  text-transform: capitalize;
+ 
+}
+
+.checkoutpage button{
+  border: 1px solid #ffd700;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.continue{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.continue p{
+  
+  font: 14px georgia;
+  }
+
+
+.itemsincart{
+
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+  font: 14px georgia;
+  margin: 10px 0;
+
+}
+
+.itemsincart > span{
+  display:inline-block;
+  width: 30%;
+
+ 
+}
+
+input{
+  margin: 0;
+ 
+}
+.checkoutpage ul{
+  margin: 0;
+  padding: 0;
+}
+
+.checkoutpage li{
+  justify-content: space-between;
+  display:flex;
+  align-items: center;
+ margin: 20px 5px;
+  text-transform:capitalize;
+  font: 14px georgia;
+  list-style-type: none;
+
+}
+
+
+.clearcart{
+  text-align: right;
+  margin: 20px 
+  
+}
+
+.clearcart button{
+  padding:  8px 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.shippingcontainer{
+  margin: 30px 0;
+  text-align: center;
+  font: 14px georgia;
+  text-transform: capitalize;
+}
+
+.shippingcontainer span, .shippingcontainer select{
+  margin: 0 20px;
+}
+
+.checkoutitems h3{
+  text-align:center;
+  margin: 20px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+table, th, td{
+ 
+  border: 1px solid black;
+  padding: 16px;
+  border-collapse: collapse;
+}
+
+table, .checkouttotal, .paymentbuttons{
+  margin: 30px 20px;
+   width: 90%;
+   text-align:center;
+   margin-left:auto;
+ margin-right:auto;
+}
+
+.paymentbuttons, .navbuttons{
+  display:flex;
+  justify-content: space-between;
+
+
+}
+
+.payment button{
+  margin: 10px 0;
+  border: 1px solid #ffd700;
+  padding: 7px 9px;
+  border-radius: 5px;
+  display:block;
+
+}
+.paymentbuttons button{
+  padding: 10px;
+  border: 1px solid #ffd700;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+form{
+  width: 80%;
+  margin: 40px auto;
+}
+
+form p{
+  font: 14px verdana;
+  text-align: left;
+}
+
+form span{
+  display:inline-block;
+  width: 30%;
+  
+}
+
+form input{
+  display:inline-block;
+  width: 100%;
+}
+
+.payment button {
+  cursor:pointer;
+}
+
+
+.delivery, .same, .billing{
+  margin: 30px 0;
+}
+
+.paymentcontainer{
+  margin: 40px 20px;
+  border: 3px solid pink;
+  border-radius: 20px;
+
+
+}
+
+.cardlogos
+{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cardlogos p{
+  font: 14px arial;
+  margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.cardlogos img{
+  width: 50%;
+  height:auto;
+}
+
+ .cardname, .cardnumber{
+  margin: 10% 0;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.cvv{
+  display:flex;
+ 
+}
+
+
+
+.cvv p{
+margin-bottom: -1px;
+}
+
+.cvv span{
+  font: 12px arial;
+  color: grey;
+  display:inline-block;
+
+}
+
+.cvv input{
+  width: 90%;
+  
+}
+
+.paynow {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.paynow button{
+  display:inline-block;
+  width: 80%;
+  padding: 16px 10px;
+  border: 1px solid pink;
+  border-radius: 20px;
+  background-color: lightskyblue;
+  cursor:pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .checkoutpage button, .checkoutpage span, .checkoutpage input{
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+.checkoutpage li, .checkoutpage button{
+  font: 12px georgia;
+}
+.cvv{
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.cvv > div {
+  width: 100%;
 }
 
-.heart {
-  color: #ff0000;
-}
 
-.small {
-  font-size: 0.75rem;
+.cvv input {
+  width: 100%;
+}
 }
