@@ -11,6 +11,7 @@ const products = [
   { id: 2, name: "athena tote", price: 185, quantity: 0 },
   { id: 3, name: "Chloe Clutch", price: 49, quantity: 0 },
   { id: 4, name: "Emerald Dragon Ring", price: 59, quantity: 0 },
+  {id: 5, name: "diana jersey jumpsuit", price: 29, quantity: 0}
 ];
 
 function Cart() {
